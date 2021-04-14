@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Login</title>
+<meta name="description" content="Thoughts, reviews and ideas since 1999."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/css/login.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic|Playfair+Display:400,700,400italic,700italic"/>
+</head>
+<body class="a">
+	<div class="site-wrapper">
+		<nav class="main-nav overlay clearfix">
+		<a class="blog-logo" href="/frontend/index.html"><img src="/assets/img/logo.png" alt="Fashion Critiques"/></a>
+		<ul id="menu">
+			<li class="nav-home" role="presentation"><a href="index.html">Home</a></li>
+			<li class="nav-about-us " role="presentation"><a href="about.html">About us</a></li>
+		
+			<li class="nav-login nav-current" role="presentation"><a href="login.html">Login</a></li>
+		    <li class="nav-login" role="presentation"><a href="register.html">Register</a></li>
+
+			<span class="socialheader">
+			<a href="#"><span class='symbol'>circletwitterbird</span></a>
+			<a href="#"><span class='symbol'>circlefacebook</span></a>
+			<a href="#"><span class='symbol'>circlegoogleplus</span></a>
+			<a href="#"><span class='symbol'>circleemail</span></a>
+			</span>
+		</ul>
+		</nav>
+		<form id="loginform">
+			
+			<div class="container">
+			  <label for="uname"><b>User ID</b></label>
+			  <input id="user-user_id" type="text" placeholder="Enter User ID" name="uname" required>
+		  
+			  <label for="psw"><b>Password</b></label>
+			  <input id="user-password" type="password" placeholder="Enter Password" name="psw" required>
+		  
+			  <button type="button" onclick="matchdata()">Login</button>
+			  
+			</div>
+		  
+			<div class="container" style="background-color:#f1f1f1">
+			  <button type="button" class="cancelbtn"><a href = "index.html" style="text-decoration: none; color: #f1f1f1;">Cancel</a></button>
+			 
+			</div>
+		  </form>
+		
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/assets/js/script.js"></script>
+	</body>
+	</html>

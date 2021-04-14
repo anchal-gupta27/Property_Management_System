@@ -1,0 +1,44 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buy property</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/myprop.css"/>
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script>
+document.addEventListener('readystatechange', () => {    
+	if (document.readyState == 'complete') getbuydata();
+  });
+</script>
+</head>
+<body>
+	<nav class="main-nav overlay clearfix">
+		<a class="blog-logo" href="/frontend/index.html"><img src="/assets/img/logo.png"/></a>
+		<ul id="menu">
+			<li class="nav-home" role="presentation"><a href="myprop.html">My Property</a></li>
+			
+			<li class="nav-buyprop  nav-current" role="presentation"><a href="buyprop.html">Buy property</a></li>
+			<li class="nav-userdel dropdown dropbtn" role="presentation"><div class = "dropdown-content">
+				<button style="width: 85px; border: none;" id="userprofile"> Profile</button>
+				<a href="index.html" onclick="signout()"> sign-out</a>
+			</div>My Account</li>
+
+		</ul>
+		</nav>
+		<div id="cd">
+			
+		</div>
+		<div class="modal" id="profile-modal">
+			<div class="modal-content" id="profile-modal-content">
+			</div>
+	   </div>
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/assets/js/buyprop.js"></script>
+	<script type="text/javascript" src="/assets/js/payment.js"></script>
+	<script type="text/javascript" src="/assets/js/profile.js"></script>
+</body>
+</html>

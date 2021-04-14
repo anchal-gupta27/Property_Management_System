@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My property</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/myprop.css" />
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<script>
+document.addEventListener('readystatechange', () => {    
+	if (document.readyState == 'complete') {
+		 getdata();
+		 boughtdata();
+		 sold_data();
+	}
+  });
+
+</script>
+<body>
+	<div>
+	<nav class="main-nav overlay clearfix">
+		<a class="blog-logo" href="/frontend/index.html"><img src="/assets/img/logo.png" /></a>
+		<ul id="menu">
+			<li class="nav-home  nav-current" role="presentation"><a href="myprop.html">My Property</a></li>
+
+			<li class="nav-buyprop" role="presentation"><a href="buyprop.html">Buy property</a></li>
+			<li class="nav-userdel dropdown dropbtn" role="presentation"><div class = "dropdown-content">
+				<button style="width: 85px; border: none;" id="userprofile"> Profile</button>
+				<button style="border: none;" onclick="signout()"> sign-out</button>
+			</div>My Account</li>			
+		</ul>
+	</nav>
+	</div>
+	
+	<div class="modal" id="profile-modal">
+		<div class="modal-content" id="profile-modal-content">
+		</div>
+   </div>
+
+	<div>
+		<div class="con">	
+			<button id="modal-btn" class="btn">Add Property</button>
+			<button  id="bought" class="btn"><a href="#boughtdetails" style="text-decoration: none; color: #000;">Bought Property</a></button>
+			<button id="sold" class="btn"><a href="#solddetails" style="text-decoration: none; color: #000;">Sold Property</a></button>
+		</div>
+		
+		<div id="addmodal" class="modal">
+			<div class="modal-content">
+				<span class="close-btn">&times;</span>
+				<form name="property" onsubmit="return false">
+					<div class="container">
+					  <h1>Property Details</h1>
+					 
+					  <div>
+					  <label for="property_type"><b>Property Type</b></label>
+					  <input type="text" name="property_type" id="property_type">
+		
+					  <label for="property_name"><b>Property Name</b></label>
+					  <input type="text"  name="name" id="property_name" required>
+		
+					  <label for="property_desc"><b>Property Description</b></label>
+					  <input type="text" name="email" id="property_desc" required>
+		
+					  <label for="Cost"><b>Cost</b></label>
+					  <input type="text"  name="phone" id="cost" required>
+	
+					  <button id="sub" type="button" class="registerbtn" onclick="submitform(this)">Submit</button>
+						
+					  
+					  </div>
+				  
+					 
+				</div>
+				  </form>
+			</div>
+		</div>
+	</div>
+
+	<div style="justify-content: normal;">
+		<h2>PROPERTY DETAILS</h2>
+		<div id="accordion">
+
+		</div>
+	</div>
+	<div>
+	<div   id ="boughtdetails" style="justify-content: normal;">
+		<h2>BOUGHT PROPERTY DETAILS</h2>
+		<div id="bought-props">
+
+		</div>
+	</div>
+</div>
+	<div id = "solddetails" style="justify-content: normal;">
+		<h2>SOLD PROPERTY DETAILS</h2>
+		<div id="sold-props">
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/assets/js/addprop.js"></script>
+	<script type="text/javascript" src="/assets/js/bought.js"></script>
+	<script type="text/javascript" src = "/assets/js/script.js"></script>
+	<script type="text/javascript" src="/assets/js/buyprop.js"></script>
+	<script type="text/javascript" src="/assets/js/profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+.main-nav {
+	position:relative;
+	padding:5px 5%;
+	margin:0 0 0px 0;
+}
+.main-nav a {
+	text-decoration:none;
+	font-size:0.9em;
+	letter-spacing:0.3px;
+	font-weight:400;
+	color:#ccc;
+	font-family:Playfair Display;
+}
+.main-nav .nav-current a {
+	color:#fff;
+}
+.main-nav a:hover {
+	color: #fff;
+}
+.nav {
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:5;
+	width:240px;
+	opacity:0;
+	background:#111;
+	margin-bottom:0;
+	text-align:left;
+	overflow-y:auto;
+	-webkit-transition:-webkit-transform 0.5s ease,opacity 0.3s ease 0.7s;
+	transition:transform 0.5s ease,opacity 0.3s ease 0.7s;
+}
+.main-header {
+	position:relative;
+	display:table;
+	width:100%;
+	height:100vh;
+	margin-bottom:5rem;
+	text-align:center;
+	background:#222 no-repeat center center;
+	background-image:url(../img/default.jpg);
+	background-size:cover;
+	overflow:hidden;
+}
+.main-header .inner {
+	width:80%;
+	margin-top:-64px;
+}
+.main-header-content.inner h1,.main-header-content.inner .post-meta,.main-header-content.inner .post-meta a {
+	color:#fff;
+}
+.page-title {
+	margin:10px 0 0px 0;
+	font-size:6.5rem;
+	letter-spacing:-1px;
+	font-weight:700;
+	font-family:"Playfair Display";
+	color:#fff;
+	font-style:italic;
+}
+.page-description {
+	margin:0;
+	font-size:2rem;
+	line-height:1.5em;
+	font-weight:300;
+	font-style:italic;
+	letter-spacing:0.01rem;
+	color:rgba(255,255,255,0.9);
+}
+.scroll-down {
+	display:block;
+	position:absolute;
+	z-index:100;
+	bottom:75px;
+	left:50%;
+	margin-left:-16px;
+	width:34px;
+	height:34px;
+	font-size:34px;
+	text-align:center;
+	text-decoration:none;
+	color:rgba(255,255,255,0.7);
+	-webkit-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	-webkit-animation:bounce 4s 2s infinite;
+	animation: bounce 4s 2s infinite;
+}
+/* Stop it bouncing and increase contrast when hovered */
+.scroll-down:hover {
+	color:#fff;
+	-webkit-animation:none;
+	animation: none;
+}
+.site-wrapper {
+	position:relative;
+	z-index:10;
+	min-height:100%;
+	background:#fff;
+	-webkit-transition:-webkit-transform 0.5s ease;
+	transition:transform 0.5s ease;
+	margin-top:64px;
+}
+.content {
+	width:85%;
+	margin:0px auto;
+	background:#fff;
+	padding:40px 0px;
+	margin-top:-100px;
+	position:relative;
+	border-left:1px solid rgba(0,0,0,0.08);
+	border-right:1px solid rgba(0,0,0,0.08);
+	border-top: 1px solid rgba(0,0,0,0.08);
+}
